@@ -165,7 +165,7 @@ export default function App() {
         className="bg-white rounded-3 shadow p-4 text-center text-md-start"
         style={{
           flex: "0 0 420px",
-          margin: "0 -40px", // pulls into the yellow blocks
+          margin: "0 -40px", 
           zIndex: "2",
         }}
       >
