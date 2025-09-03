@@ -5,7 +5,6 @@ export default function App() {
     <div>
       {/* ================= HEADER ================= */}
 <header className="bg-white border-bottom">
-  {/* Top Support + Sub Nav in one line */}
   {/* Main Header */}
   <div className="d-flex align-items-center justify-content-between px-4 py-3">
     {/* Logo */}
@@ -204,11 +203,11 @@ export default function App() {
 
       {/* ================= FOOTER ================= */}
 <footer className="bg-light text-dark py-5 mt-5 border-top">
-  <div className="container">
-    <div className="row g-5 align-items-start">
+  <div className="container-fluid px-5">
+    <div className="row align-items-start justify-content-between">
       
-      {/* Company Info + Links */}
-      <div className="col-md-6">
+      {/* Left Side: Company Info */}
+      <div className="col-md-6 text-start">
         {/* Logo */}
         <div className="d-flex align-items-center mb-3">
           <img
@@ -217,68 +216,67 @@ export default function App() {
             style={{ height: "40px" }}
             className="me-2"
           />
-          <span className="fw-semibold"></span>
         </div>
 
         {/* Description */}
-        <p className="mb-1 fw-semibold">
-          We are the Brand Love, Built Better, Together™ company.
+        <p className="mb-1 fw-semibold fw-bold">
+          We are the Brand Love, Built Better, <br /> Together™ company.
         </p>
-        <a href="#" className="text-danger fw-semibold small d-block mb-3">
+        <a href="#" className="text-primary fw-semibold small d-block mb-3">
           Our Story &gt;
         </a>
 
-        {/* Links stacked */}
-        <ul className="list-unstyled fw-bold">
-  <li className="mb-2">
-    <a href="#" className="text-dark text-decoration-none">Help</a>
-  </li>
-  <li className="mb-2">
-    <a href="#" className="text-dark text-decoration-none">About Us</a>
-  </li>
-  <li className="mb-2">
-    <a href="#" className="text-dark text-decoration-none">Blog</a>
-  </li>
-  <li className="mb-2">
-    <span className="text-dark">1-800-491-3003</span>
-  </li>
-  <li>
-    <a href="#" className="text-dark text-decoration-none">Careers</a>
-  </li>
-</ul>
-
+        {/* Links in one line */}
+        <ul className="list-inline fw-bold mb-3">
+          <li className="list-inline-item me-4">
+            <a href="#" className="text-dark text-decoration-none">Help</a>
+          </li>
+          <li className="list-inline-item me-4">
+            <a href="#" className="text-dark text-decoration-none">About Us</a>
+          </li>
+          <li className="list-inline-item me-4">
+            <a href="#" className="text-dark text-decoration-none">Blog</a>
+          </li>
+          <li className="list-inline-item me-4 text-dark">
+            1-800-491-3003
+          </li>
+          <li className="list-inline-item">
+            <a href="#" className="text-dark text-decoration-none">Careers</a>
+          </li>
+        </ul>
 
         {/* Social Icons */}
-        <div className="d-flex gap-3 mt-3">
+        <div className="d-flex gap-3">
           <a href="#"><i className="fab fa-facebook"></i></a>
           <a href="#"><i className="fab fa-instagram"></i></a>
+          <a href="#"><i className="fab fa-linkedin"></i></a>
           <a href="#"><i className="fab fa-pinterest"></i></a>
         </div>
       </div>
 
-      {/* Newsletter */}
-      <div className="col-md-6">
-        <h5 className="fw-bold mb-3">
+      {/* Right Side: Newsletter */}
+      <div className="col-md-4 text-end">
+        <h6 className="fw-bold mb-2">
           Sign Up and Get 10% OFF Your First Order
-        </h5>
+        </h6>
         <p className="small mb-3">
           Enter your email below to receive exclusive offers and more.
         </p>
-        <form className="d-grid gap-3">
+        <form className="d-grid gap-2 ms-auto" style={{ maxWidth: "250px"}}>
           <input
             type="text"
-            className="form-control"
+            className="form-control form-control-sm"
             placeholder="First Name"
           />
           <input
             type="email"
-            className="form-control"
+            className="form-control form-control-sm"
             placeholder="Email Address"
           />
           <button
             type="submit"
-            className="btn text-white fw-semibold"
-            style={{ backgroundColor: "#F44719" }}
+            className="btn btn-sm fw-semibold"
+            style={{ backgroundColor: "#fff", color: "#F44719", border: "1px solid #F44719" }}
           >
             Submit
           </button>
@@ -288,16 +286,21 @@ export default function App() {
 
     {/* Copyright */}
     <div className="text-center mt-4 small text-secondary">
-      © 2025 Staples, Inc. All Rights Reserved.
-      <br />
+      © 2025 Staples, Inc. All Rights Reserved. <br />
       <a href="#" className="text-decoration-none text-secondary">Corporate Social Responsibility</a> | 
       <a href="#" className="text-decoration-none text-secondary"> Terms and Conditions</a> | 
       <a href="#" className="text-decoration-none text-secondary"> Accessibility Statement</a> | 
+      <a href="#" className="text-decoration-none text-secondary"> Vulnerability Disclosure Policy</a> | 
       <a href="#" className="text-decoration-none text-secondary"> Privacy Notice</a> | 
-      <a href="#" className="text-decoration-none text-secondary"> Cookie Preferences</a>
+      <a href="#" className="text-decoration-none text-secondary"> California Notice</a> | 
+      <a href="#" className="text-decoration-none text-secondary"> Cookie Preferences</a> | 
+      <a href="#" className="text-decoration-none text-secondary"> Do Not Sell or Share My Personal Information</a>
     </div>
   </div>
 </footer>
+
+
+
 
     </div>
   );
