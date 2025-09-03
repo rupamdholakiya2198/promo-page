@@ -4,74 +4,79 @@ export default function App() {
   return (
     <div>
       {/* ================= HEADER ================= */}
-      <header className="bg-white border-bottom">
-        <div className="container d-flex align-items-center justify-content-between py-3">
-          {/* Logo */}
-          <a href="/" className="d-flex align-items-center text-decoration-none">
-            <img
-              src="/spp_wordmark_logo.svg"
-              alt="Staples Logo"
-              style={{ height: "28px" }}
-            />
-          </a>
+<header className="bg-white border-bottom">
+  {/* Top Support + Sub Nav in one line */}
+  {/* Main Header */}
+  <div className="d-flex align-items-center justify-content-between px-4 py-3">
+    {/* Logo */}
+    <a href="/" className="d-flex align-items-center text-decoration-none me-4">
+      <img
+        src="/spp_wordmark_logo.svg"
+        alt="Staples Logo"
+        style={{ height: "28px" }}
+      />
+    </a>
 
-          {/* Left Navigation */}
-          <nav className="d-none d-md-flex gap-4 fw-semibold">
-            <a href="#" className="text-dark text-decoration-none">
-              Shop
-            </a>
-            <a href="#" className="text-dark text-decoration-none">
-              Help Me Pick
-            </a>
-          </nav>
+    {/* Left Navigation */}
+    <nav className="d-none d-md-flex gap-4 fw-semibold me-4">
+      <a href="#" className="text-dark text-decoration-none">
+        Shop <i className="fas fa-chevron-right small ms-1"></i>
+      </a>
+      <a href="#" className="text-dark text-decoration-none">
+        Help Me Pick
+      </a>
+    </nav>
 
-          {/* Search */}
-          <form
-            className="d-flex align-items-center"
-            style={{ flex: "1", maxWidth: "300px" }}
-          >
-            <input
-              type="search"
-              className="form-control"
-              placeholder="Search..."
-            />
-          </form>
+    {/* Search */}
+    <form className="flex-grow-1 d-flex align-items-center mx-3" style={{ maxWidth: "350px" }}>
+      <input
+        type="search"
+        className="form-control"
+        placeholder="Search..."
+      />
+    </form>
 
-          {/* Icons */}
-          <div className="d-flex gap-3 ms-3">
-            <a href="#" className="text-dark">
-              <i className="far fa-user"></i>
-            </a>
-            <a href="#" className="text-dark">
-              <i className="fas fa-shopping-cart"></i>
-            </a>
-          </div>
-        </div>
+    {/* Icons */}
+    <div className="d-flex gap-3">
+      <a href="#" className="text-dark">
+        <i className="far fa-user"></i>
+      </a>
+      <a href="#" className="text-dark">
+        <i className="fas fa-shopping-cart"></i>
+      </a>
+    </div>
+  </div>
 
-        {/* Sub Nav */}
-        <div className="bg-white border-top text-center py-2 small fw-semibold">
-          <a href="#" className="mx-3 text-dark text-decoration-none">
-            24-Hour Production
-          </a>
-          <a href="#" className="mx-3 text-dark text-decoration-none">
-            Best Sellers
-          </a>
-          <a href="#" className="mx-3 text-dark text-decoration-none">
-            Closeouts
-          </a>
-          <a href="#" className="mx-3 text-dark text-decoration-none">
-            Our Story
-          </a>
-        </div>
+  <div className="bg-light d-flex justify-content-between align-items-center px-4 py-1 small">
+    {/* Left side: Support Info */}
+    <div className="text-muted">
+      Get answers, ideas or help:{" "}
+      <a href="#" className="text-black text-decoration-underline">
+        Contact Us
+      </a>
+    </div>
 
-        {/* Support Info */}
-        <div className="bg-light text-start ps-4 py-1 small text-muted">
-          Get answers, ideas or help:{" "}
-          <a href="#" className="text-decoration-none">
-            Contact Us
-          </a>
-        </div>
-      </header>
+    {/* Right side: Sub Nav */}
+    <div className="fw-semibold">
+      <a href="#" className="mx-3 text-dark text-decoration-none">
+        24-Hour Production
+      </a>
+      <a href="#" className="mx-3 text-dark text-decoration-none">
+        Best Sellers
+      </a>
+      <a href="#" className="mx-3 text-dark text-decoration-none">
+        Closeouts
+      </a>
+      <a href="#" className="mx-3 text-dark text-decoration-none">
+        Our Story
+      </a>
+    </div>
+  </div>
+
+
+</header>
+
+
 
       {/* ================= HERO ================= */}
       <section className="text-center py-5 bg-white">
